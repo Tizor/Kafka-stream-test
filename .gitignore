@@ -1,0 +1,37 @@
+.idea/*
+=======
+.gradle
+
+build
+out
+
+
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+Kafka-stream-example/gradle
+Kafka-stream-example/build
+Kafka-stream-example/out
+Kafka-stream-example/settings.gradle

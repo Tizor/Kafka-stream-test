@@ -1,0 +1,32 @@
+---- Kafka Stream test running ----
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic Kafka-stream-topic
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic Kafka-input-stream
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic Kafka-input-stream
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 \
+		--topic Kafka-stream-topic \
+		--from-beginning \
+		--formatter kafka.tools.DefaultMessageFormatter \
+		--property print.key=true \
+		--property print.value=true \
+		--property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
+		--property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Kafka-stream-topic --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.value=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+
+		--property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
+		--property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+kafka-run-class.bat --path to java file-- Appication.java
+
+kafka-run-class.bat --path to java file-- Appication.java
+
+kafka streams udemy
+kafka streams course
+kafka data processing
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Kafka-input-stream --from-beginning
